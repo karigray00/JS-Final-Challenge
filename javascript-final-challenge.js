@@ -61,7 +61,7 @@ function getTopStudentsSorted(students) {
       topStudents.push(student.name);
     }
   });
-  return topStudents.sort();
+  return topStudents.sort()
 }
 
-console.log(getTopStudentsSorted(wizards));
+document.querySelector('.topStudentsList').innerHTML = getTopStudentsSorted(wizards).join("<br>")
